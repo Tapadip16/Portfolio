@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="assets/programming-C0kQsJee.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tapadip.</title>
+
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- font awesome icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" crossorigin src="assets/index-DsyU982F.js"></script>
+  <link rel="stylesheet" crossorigin href="assets/index-Cf3Zp7Xw.css">
+</head>
+
+<body class="dark:bg-slate-900 dark:text-gray-200">
+
+  <!-- header -->
+  <header class="fixed xl:block w-full py-4 lg:px-0 px-5 z-[999] duration-300">
+    <nav class="flex justify-between items-center max-w-6xl mx-auto px-2">
+      <div class="flex gap-4 items-center">
+        <div class="bg-primary text-white rounded-full size-10 text-xl grid place-items-center">
+          T
+        </div>
+        <div>
+          <h4 class="font-bold text-lg uppercase">Tapadip.</h4>
+          <p class="text-xs">Profile</p>
+        </div>
+      </div>
+      <ul class="gap-10 md:flex hidden hover:*:text-primary *:duration-200">
+        <li class="hover:*:border-y-2 *:border-primary *:duration-100">
+          <a href="#home">Home</a>
+        </li>
+        <li class="hover:*:border-y-2 *:border-primary *:duration-100">
+          <a href="#about">About Me</a>
+        </li>
+        <li class="hover:*:border-y-2 *:border-primary *:duration-100">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="hover:*:border-y-2 *:border-primary *:duration-100">
+          <a href="#services">Services</a>
+        </li>
+        <li class="hover:*:border-y-2 *:border-primary *:duration-100">
+          <a href="#contact">Contact Me</a>
+        </li>
+        <li class="theme-switch">
+          <i class="fa-solid fa-circle-half-stroke cursor-pointer"></i>
+        </li>
+      </ul>
+      <div class="flex items-center gap-6">
+        <a href="#contact">
+          <button class="btn btn-outline md:!flex !hidden">
+            <i class="fa-regular fa-paper-plane"></i> Let's Talk
+          </button>
+        </a>
+        <span class="theme-switch md:hidden">
+          <i class="fa-solid fa-circle-half-stroke cursor-pointer"></i>
+        </span>
+        <span id="menubar" class="cursor-pointer md:hidden text-xl">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- backdrop -->
+  <span id="backdrop"
+    class="fixed h-screen hidden bg-black/10 backdrop-blur-sm z-[997] inset-0 w-full"></span>
+
+  <!-- mobile nav -->
+   <div id="mobile-nav" class="md:hidden dark:bg-slate-800 bg-primary fixed w-full h-0 overflow-hidden bottom-0 duration-200 rounded-t-3xl left-0 z-[998]">
+    <ul
+    class="gap-6 my-8 text-xl text-white flex-center flex-col">
+    <li>
+      <a href="#home">Home</a>
+    </li>
+    <li>
+      <a href="#about">About Me</a>
+    </li>
+    <li>
+      <a href="#projects">Projects</a>
+    </li>
+    <li>
+      <a href="#services">Services</a>
+    </li>
+    <li>
+      <a href="#contact">Contact Me</a>
+    </li>
+    <a href="#contact">
+      <button class="btn btn-outline">
+        <i class="fa-regular fa-paper-plane"></i> Let's Talk
+      </button>
+    </a>
+  </ul>
+   </div>
+
+  <!-- Home -->
+  <section id="home"
+    class="min-h-screen container grid place-items-center relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-heroLight before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2 dark:before:bg-heroDark">
+
+    <div class="size-full pt-20 grid md:grid-cols-6 items-center justify-around max-w-6xl">
+      <div class="lg:col-span-2 md:col-span-3 md:text-left text-center sm:pl-2" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200">
+        <div>
+          <h5 class="font-medium text-gray-600 dark:text-gray-200">
+            Hello! Welcome
+          </h5>
+          <h1 class="sm:text-5xl text-4xl !leading-normal dark:text-white relative font-medium">
+            I'm <span class="text-primary">Tapadip</span> <br />
+            an <span id="element"></span>
+          </h1>
+          <button class="btn btn-filled mt-5">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:tapadippaul@gmail.com">Hire Me</a>
+          </button>
+          <button class="font-semibold dark:text-gray-200 border-b-2 border-gray-700 ml-4">
+            <i class="fa-solid fa-up-right-from-square"></i>
+            <a href="#projects">See Portfolio</a>
+          </button>
+        </div>
+        <div class="md:w-96 md:ml-auto flex mt-9 gap-2 dark:text-gray-300">
+          <i class="fa-solid fa-border-all mt-0.5 md:inline-block hidden"></i>
+          <p class="text-xs text-balance leading-5 max-w-md px-2 mx-auto">
+            Welcome to my digital realm, where innovation meets imagination, and pixels dance to the
+            rhythm of perfection. I'm Tapadip, a passionate Web developer and UI/UX designer on a
+            mission to craft tomorrow's web today.
+          </p>
+        </div>
+        <div
+          class="flex items-center md:justify-start justify-center mt-9 gap-6 dark:text-gray-200 text-gray-600">
+          <p><i class="fa-solid fa-globe mr-4"></i> Follow Me</p>
+          <div class="flex gap-3">
+            <a href="https://www.linkedin.com/in/tapadip-paul" class="social-icon" target="_blank"
+              rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Tapadip16" class="social-icon" target="_blank"
+              rel="noopener noreferrer">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/tapadip_" class="social-icon" target="_blank"
+              rel="noopener noreferrer">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-2 md:col-span-3" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400">
+        <img src="assets/hero-C5qX3KD_.png" class="md:w-full max-w-96 md:mt-0 mt-5 w-2/3 mx-auto" alt="">
+      </div>
+      <div
+        class="lg:col-span-2 md:col-span-6 lg:bg-gradient-to-l md:bg-none mt-2 bg-gradient-to-l dark:from-slate-800 from-gray-100 lg:h-96 md:h-auto h-96 w-full" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="600">
+        <ul
+          class="text-2xl data-[slot=count]:*:text-3xl data-[slot=count]:*:font-bold leading-[3.14rem] text-center pt-5 lg:block md:flex items-center justify-between">
+          <li data-slot="count">2+</li>
+          <li>Year of <span class="text-primary">Experience</span></li>
+          <br />
+          <li data-slot="count">3+</li>
+          <li>Completed <span class="text-primary">Projects</span></li>
+          <li>
+            <button class="btn btn-outline lg:mt-10 md:mt-0 mt-10">
+              <i class="fa-solid fa-download"></i> <a
+                href="https://drive.google.com/file/d/1IKbUvK4of4dec9oCNpFyHvXC54ncq9r3/view?usp=sharing"
+                target="_blank" rel="noopener noreferrer">
+                Download CV
+              </a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container min-h-screen flex-center" data-aos="fade-up">
+    <div class="">
+      <div class="text-center text-balance">
+        <h3>What I Know</h3>
+        <p class="px-2 mt-3 text-gray-500">
+          Greetings, I am Tapadip Paul, a passionate Front-End Developer from the vibrant state of
+          West Bengal, with my roots in the town of Raniganj. At the age of 21, I became fully
+          immersed in web development, specifically specializing in Front-End development, UI/UX
+          design, and web design. My expertise is to create, design & deploy stunning websites.
+        </p>
+      </div>
+      <div class="max-w-4xl mx-auto mt-10 px-8 sm:px-0">
+        <div class="sm:w-8/12 sm:mx-auto">
+          <div role="tablist" aria-label="tabs"
+            class="relative w-max mx-auto h-14 px-1 grid grid-cols-4 items-center rounded-full bg-white dark:bg-slate-800 overflow-hidden shadow-2xl shadow-900/20 transition">
+            <div
+              class="absolute indicator h-11 my-auto top-0 bottom-0 left-0 rounded-full bg-slate-200 dark:bg-slate-600 shadow-md">
+            </div>
+            <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0"
+              class="relative block h-10 px-6 tab rounded-full">
+              <span class="text-gray-600 dark:text-gray-400">FrontEnd</span>
+            </button>
+            <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2"
+              tabindex="-1" class="relative block h-10 px-6 tab rounded-full">
+              <span class="text-gray-600 dark:text-gray-400">BackEnd</span>
+            </button>
+            <button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3"
+              tabindex="-1" class="relative block h-10 px-6 tab rounded-full">
+              <span class="text-gray-600 dark:text-gray-400">Designing</span>
+            </button>
+            <button role="tab" aria-selected="false" aria-controls="panel-4" id="tab-4"
+              tabindex="-1" class="relative block h-10 px-6 tab rounded-full">
+              <span class="text-gray-600 dark:text-gray-400">Tools</span>
+            </button>
+          </div>
+          <div class="mt-6 relative rounded-3xl bg-gray-200 dark:bg-slate-800">
+            <div role="tabpanel" id="panel-1" class="tab-panel p-6 transition duration-300 w-full">
+              <h2 class="text-xl mb-4 border-b-2 border-primary font-semibold text-primary">FrontEnd
+                Skills</h2>
+              <div class="body">
+                <ul>
+                  <li class="mb-4">
+                    <span>HTML</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 90%"></div>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span>CSS (SASS/SCSS)</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 85%"></div>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span>Bootstrap5</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 80%"></div>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span>JavaScript</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 70%"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div role="tabpanel" id="panel-2"
+              class="absolute top-0 invisible opacity-0 tab-panel p-6 transition duration-300 w-full">
+              <h2 class="text-xl mb-4 border-b-2 border-primary font-semibold text-primary">BackEnd
+                Skills</h2>
+              <div class="body">
+                <ul>
+                  <li class="mb-4">
+                    <span>Java</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 70%"></div>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span>Python</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 40%"></div>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span>MySQL</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 70%"></div>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span>Firebase</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 60%"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div role="tabpanel" id="panel-3"
+              class="absolute top-0 invisible opacity-0 tab-panel p-6 transition duration-300 w-full">
+              <h2 class="text-xl mb-4 border-b-2 border-primary font-semibold text-primary">
+                Designing Skills</h2>
+              <div class="body">
+                <ul>
+                  <li class="mb-4">
+                    <span>Figma</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 60%"></div>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span>Canva</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 40%"></div>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span>UI Wireframing</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 70%"></div>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span>Responsive Design</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 60%"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div role="tabpanel" id="panel-4"
+              class="absolute top-0 invisible opacity-0 tab-panel p-6 transition duration-300 w-full">
+              <h2 class="text-xl mb-4 border-b-2 border-primary font-semibold text-primary">Tools
+                Skills</h2>
+              <div class="body">
+                <ul>
+                  <li class="mb-4">
+                    <span>Git & Github</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 75%"></div>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span>VS Code</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 80%"></div>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span>Android Studio</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 70%"></div>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span>Ubuntu / Kali Linux</span>
+                    <div class="progress bg-gray-300 dark:bg-slate-600 rounded h-2 mt-1">
+                      <div class="progress-bar bg-primary h-2 rounded" style="width: 60%"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container min-h-screen flex-center" data-aos="fade-up">
+    <div class="text-center text-balance">
+      <h3>My Projects</h3>
+      <p class="px-2 mt-3 text-gray-500">
+        Welcome! I'm Tapadip, a Front-End Web Developer with two years of experience. Skilled in
+        HTML, CSS, and JavaScript, I excel in problem-solving and thrive in collaborative settings.
+        Check out my portfolio for a glimpse into my technical prowess, creativity, and attention to
+        detail. Let's explore together!
+      </p>
+
+      <div class="grid mx-auto mt-10 md:grid-rows-2 md:grid-cols-2 max-w-4xl md:px-0 px-10 gap-4">
+        <div class="relative group">
+          <img src="assets/news-B25Hnyjh.png" alt=""
+            class="w-full h-full object-cover border-4 dark:border-white rounded-md group-hover:grayscale transition duration-1000">
+          <a href="https://github.com/Tapadip16/News-Portal" target="_blank"
+            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500"><i
+              class="fa-solid fa-eye p-4"></i></a>
+        </div>
+        <div class="relative group">
+          <img src="assets/hms-VUdIUNag.png" alt=""
+            class="w-full h-full object-cover border-4 dark:border-white rounded-md group-hover:grayscale transition duration-1000">
+          <a href="https://github.com/Tapadip16/Hospital" target="_blank"
+            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500"><i
+              class="fa-solid fa-eye p-4"></i></a>
+        </div>
+        <div class="relative group">
+          <img src="assets/suvidha-foundation-BbR_msOq.png" alt=""
+            class="w-full h-full object-cover border-4 dark:border-white rounded-md group-hover:grayscale transition duration-1000">
+          <a href="https://suvidha-foundation-rebuild.netlify.app" target="_blank"
+            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500"><i
+              class="fa-solid fa-eye p-4"></i></a>
+        </div>
+        <div class="relative group">
+          <img src="assets/hms-app-mSz0Q7CP.png" alt=""
+            class="w-full h-full object-cover border-4 dark:border-white rounded-md group-hover:grayscale transition duration-1000">
+          <a href="https://github.com/Tapadip16/hms" target="_blank"
+            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500"><i
+              class="fa-solid fa-eye p-4"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="container flex-center" data-aos="fade-up">
+    <div>
+      <div class="text-center text-balance">
+        <h3>Checkout My Services</h3>
+      </div>
+      <div class="flex flex-wrap justify-center mt-6 gap-8 text-primary group">
+        <div
+          class="bg-gray-200 dark:bg-white/10 duration-300 group-hover:blur-sm hover:!blur-none *:cursor-default group-hover:scale-[0.85] hover:!scale-100 p-4 sm:p-8 w-80 sm:w-80 h-48 sm:h-60 grid place-content-center rounded-xl text-center mb-4 sm:mb-0">
+          <div class="mb-2">
+            <i class="fa-solid fa-laptop-code text-3xl sm:text-4xl"></i>
+          </div>
+          <h4 class="text-lg sm:text-2xl">FrontEnd Development</h4>
+        </div>
+        <div
+          class="bg-gray-200 dark:bg-white/10 duration-300 group-hover:blur-sm hover:!blur-none *:cursor-default group-hover:scale-[0.85] hover:!scale-100 p-4 sm:p-8 w-80 sm:w-80 h-48 sm:h-60 grid place-content-center rounded-xl text-center mb-4 sm:mb-0">
+          <div class="mb-2">
+            <i class="fa-solid fa-palette text-3xl sm:text-4xl"></i>
+          </div>
+          <h4 class="text-lg sm:text-2xl">UI/UX Designing</h4>
+        </div>
+        <div
+          class="bg-gray-200 dark:bg-white/10 duration-300 group-hover:blur-sm hover:!blur-none *:cursor-default group-hover:scale-[0.85] hover:!scale-100 p-4 sm:p-8 w-80 sm:w-80 h-48 sm:h-60 grid place-content-center rounded-xl text-center">
+          <div class="mb-2">
+            <i class="fa-solid fa-object-group text-3xl sm:text-4xl"></i>
+          </div>
+          <h4 class="text-lg sm:text-2xl">Web Wireframing</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container relative max-w-4xl mx-auto min-h-screen flex-center px-5" data-aos="fade-up">
+    <div class="pb-10">
+      <div class="text-center">
+        <h3>Contact Me</h3>
+        <p class="px-2 mt-3 text-gray-500">
+          Thank you for visiting my portfolio site! Your interest means a lot to me. I'm truly
+          grateful for the opportunity to share my work and passion with you. Please feel free to
+          explore and reach out with any questions or feedback. Your support is greatly appreciated!
+        </p>
+      </div>
+      <div class="mt-12 md:relative flex flex-col gap-5 sm:max-w-full mx-auto max-w-xs">
+        <div
+          class="dark:bg-slate-800 bg-slate-50 dark:text-gray-100 text-gray-800 rounded-lg shadow-xl mx-auto md:w-2/3 py-14 px-7 w-full">
+          <h3 class="font-semibold text-3xl">
+            Send Me A <br /><span class="text-primary">Message</span>
+          </h3>
+          <form class="*:flex *:flex-col *:gap-1 mt-5 md:w-2/3 w-full">
+            <div class="">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Enter your name" />
+            </div>
+            <div class="">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Enter your email address" />
+            </div>
+            <div class="">
+              <label for="msg">Message</label>
+              <textarea id="msg" placeholder="Enter your message"></textarea>
+            </div>
+            <button class="btn btn-filled ml-auto">Send to Me</button>
+          </form>
+        </div>
+        <div
+          class="dark:bg-gray-700 bg-white py-12 px-7 md:absolute lg:-right-9 right-28 rounded-xl shadow-xl md:w-2/5 h-5/6 top-28 w-full mx-auto">
+          <h3 class="font-semibold text-2xl border-b pb-4 border-gray-600">
+            Drop In Our <br />Office <span class="text-primary">.</span>
+          </h3>
+          <div class="py-4">
+            <p class="text-xs text-gray-400 leading-5">
+              Grateful for the journey, embracing growth, and excited to showcase my creative
+              endeavors. Thank you for visiting!
+            </p>
+            <ul class="*:flex *:gap-4 *:items-center *:mt-4">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <h2>West Bengal, India</h2>
+                  <address class="text-xs">Raniganj, Ashok Pally, 713347</address>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <p>tapadippaul@gmail.com</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <p>+91 90644 84071</p>
+              </li>
+            </ul>
+            <div
+              class="flex items-center md:justify-end justify-center dark:text-gray-200 text-gray-600 gap-6 mt-9">
+              <p class="text-xs">Follow Me</p>
+              <div class="flex justify-end gap-3">
+                <a href="https://www.linkedin.com/in/tapadip-paul" class="social-icon"
+                  target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Tapadip16" class="social-icon" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/tapadip_" class="social-icon" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="dark:bg-slate-700 bg-slate-100 text-center py-2">
+    Copyright &copy; 2024
+    <ul class="flex-center gap-5 py-4 text-sm">
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#about">About Me</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#services">Services</a>
+      </li>
+      <li>
+        <a href="#contact">Contact Me</a>
+      </li>
+    </ul>
+  </footer>
+
+  <!-- Buy Me Coffee Btn -->
+  <script data-name="BMC-Widget" data-async="false"
+    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="tapadippaul"
+    data-description="Support me on Buy me a coffee!"
+    data-message="Thank you for your kind gesture!" data-color="#17a2b8" data-position="Right"
+    data-x_margin="18" data-y_margin="18"></script>
+
+  <!-- modules script -->
+
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 3000,
+    });
+  </script>
+</body>
+
+</html>
