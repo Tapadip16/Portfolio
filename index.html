@@ -73,38 +73,39 @@
     class="fixed h-screen hidden bg-black/10 backdrop-blur-sm z-[997] inset-0 w-full"></span>
 
   <!-- mobile nav -->
-   <div id="mobile-nav" class="md:hidden dark:bg-slate-800 bg-primary fixed w-full h-0 overflow-hidden bottom-0 duration-200 rounded-t-3xl left-0 z-[998]">
-    <ul
-    class="gap-6 my-8 text-xl text-white flex-center flex-col">
-    <li>
-      <a href="#home">Home</a>
-    </li>
-    <li>
-      <a href="#about">About Me</a>
-    </li>
-    <li>
-      <a href="#projects">Projects</a>
-    </li>
-    <li>
-      <a href="#services">Services</a>
-    </li>
-    <li>
-      <a href="#contact">Contact Me</a>
-    </li>
-    <a href="#contact">
-      <button class="btn btn-outline">
-        <i class="fa-regular fa-paper-plane"></i> Let's Talk
-      </button>
-    </a>
-  </ul>
-   </div>
+  <div id="mobile-nav"
+    class="md:hidden dark:bg-slate-800 bg-primary fixed w-full h-0 overflow-hidden bottom-0 duration-200 rounded-t-3xl left-0 z-[998]">
+    <ul class="gap-6 my-8 text-xl text-white flex-center flex-col">
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#about">About Me</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#services">Services</a>
+      </li>
+      <li>
+        <a href="#contact">Contact Me</a>
+      </li>
+      <a href="#contact">
+        <button class="btn btn-outline">
+          <i class="fa-regular fa-paper-plane"></i> Let's Talk
+        </button>
+      </a>
+    </ul>
+  </div>
 
   <!-- Home -->
   <section id="home"
     class="min-h-screen container grid place-items-center relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-heroLight before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2 dark:before:bg-heroDark">
 
     <div class="size-full pt-20 grid md:grid-cols-6 items-center justify-around max-w-6xl">
-      <div class="lg:col-span-2 md:col-span-3 md:text-left text-center sm:pl-2" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200">
+      <div class="lg:col-span-2 md:col-span-3 md:text-left text-center sm:pl-2" data-aos="fade-down"
+        data-aos-duration="2000" data-aos-delay="200">
         <div>
           <h5 class="font-medium text-gray-600 dark:text-gray-200">
             Hello! Welcome
@@ -149,11 +150,14 @@
           </div>
         </div>
       </div>
-      <div class="lg:col-span-2 md:col-span-3" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400">
-        <img src="assets/hero-C5qX3KD_.png" class="md:w-full max-w-96 md:mt-0 mt-5 w-2/3 mx-auto" alt="">
+      <div class="lg:col-span-2 md:col-span-3" data-aos="fade-down" data-aos-duration="2000"
+        data-aos-delay="400">
+        <img src="assets/hero-C5qX3KD_.png" class="md:w-full max-w-96 md:mt-0 mt-5 w-2/3 mx-auto"
+          alt="">
       </div>
       <div
-        class="lg:col-span-2 md:col-span-6 lg:bg-gradient-to-l md:bg-none mt-2 bg-gradient-to-l dark:from-slate-800 from-gray-100 lg:h-96 md:h-auto h-96 w-full" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="600">
+        class="lg:col-span-2 md:col-span-6 lg:bg-gradient-to-l md:bg-none mt-2 bg-gradient-to-l dark:from-slate-800 from-gray-100 lg:h-96 md:h-auto h-96 w-full"
+        data-aos="fade-down" data-aos-duration="2000" data-aos-delay="600">
         <ul
           class="text-2xl data-[slot=count]:*:text-3xl data-[slot=count]:*:font-bold leading-[3.14rem] text-center pt-5 lg:block md:flex items-center justify-between">
           <li data-slot="count">2+</li>
@@ -164,8 +168,8 @@
           <li>
             <button class="btn btn-outline lg:mt-10 md:mt-0 mt-10">
               <i class="fa-solid fa-download"></i> <a
-                href="https://drive.google.com/file/d/1KqQZFipiE5Z1E861qd5tjvFc83EOHoKB/view?usp=sharing"
-                target="_blank" rel="noopener noreferrer">
+                href="https://github.com/Tapadip16/portfolio/blob/main/assets/Tapadip-Resume.pdf"
+                download="resume.pdf" rel="noopener noreferrer">
                 Download CV
               </a>
             </button>
@@ -427,7 +431,8 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="container relative max-w-4xl mx-auto min-h-screen flex-center px-5" data-aos="fade-up">
+  <section id="contact" class="container relative max-w-4xl mx-auto min-h-screen flex-center px-5"
+    data-aos="fade-up">
     <div class="pb-10">
       <div class="text-center">
         <h3>Contact Me</h3>
@@ -443,20 +448,24 @@
           <h3 class="font-semibold text-3xl">
             Send Me A <br /><span class="text-primary">Message</span>
           </h3>
-          <form class="*:flex *:flex-col *:gap-1 mt-5 md:w-2/3 w-full">
+          <form class="*:flex *:flex-col *:gap-1 mt-5 md:w-2/3 w-full"
+            action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="c722e83d-672a-47c9-ad0b-791810cf763b">
+
             <div class="">
               <label for="name">Name</label>
-              <input type="text" id="name" placeholder="Enter your name" />
+              <input type="text" id="name" placeholder="Enter your name" required/>
             </div>
             <div class="">
               <label for="email">Email Address</label>
-              <input type="email" id="email" placeholder="Enter your email address" />
+              <input type="email" id="email" placeholder="Enter your email address" required/>
             </div>
             <div class="">
               <label for="msg">Message</label>
               <textarea id="msg" placeholder="Enter your message"></textarea>
             </div>
-            <button class="btn btn-filled ml-auto">Send to Me</button>
+            <button type="submit" class="btn btn-filled ml-auto">Send to Me</button>
           </form>
         </div>
         <div
